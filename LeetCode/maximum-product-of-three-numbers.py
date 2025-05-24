@@ -1,6 +1,19 @@
 class Solution:
     def maximumProduct(self, nums: List[int]) -> int:
-        
+
+        sorted = nums.sort() # sort the array 
+
+        producti = nums[-1]*nums[-2]*nums[-3]  # take 3 largest numbers  eg :[1,2,3,4 ] ,[1,2,3,-5] [-1,-2,-3,-4]
+
+
+        productii = nums[0]*nums[1]*nums[-1]  # 1 largest and two -ve smallest eg:  [1,2,-3,-4]
+
+        return max(producti,productii) # with time complex O(n log n)
+
+
+
+
+    """
 
         n = len(nums)
         i = 0
@@ -15,3 +28,8 @@ class Solution:
         productii = nums[0]*nums[1]*nums[-1]    # 1 largest and two -ve smallest eg:  [1,2,-3,-4]
 
         return max(producti,productii)          
+
+
+           # TIME COMPLEXITY : n(O^2)  exceeded time limit 
+
+           """
