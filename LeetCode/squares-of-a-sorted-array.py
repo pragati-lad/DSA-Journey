@@ -7,7 +7,7 @@ class Solution:
         for i in range(n):
            nums[i] = nums[i] * nums[i]
         
-        # sort the squares
+        # sort the squares in non - decreasing order
         nums.sort()
         return nums    
         
