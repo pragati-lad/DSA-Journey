@@ -9,7 +9,7 @@ class Solution:
   # verify whether the candidate is majority
   
   # assume that 1st element is the majority
-        n = len(nums)
+        
         count = 0
 
         for i in nums:
@@ -26,7 +26,8 @@ class Solution:
 # or 
 
 
-"""
+"""     n = len(nums)
+        count = 0
         for i in range(n):
             if count == 0:
                 candidate = nums[i] 
