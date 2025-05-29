@@ -6,7 +6,7 @@ class Solution:
         while p < q : # as its an sorted array 
 
             if numbers[p] + numbers[q] == target:
-                return [p+1,q+1]
+                return [p+1,q+1]  # p+1 , q+1 because 'numbers' being an 1-indexed 
 
             elif numbers[p] + numbers[q] > target:
                 q -= 1
